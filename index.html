@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local Storage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="user_input_div">
+            <p class="heading"><i class="fa-regular fa-file" style="color: #1D4ED8; margin-right: 7px;"></i>Notes Manager</p>
+            
+            <div class="user_box">
+                <div class="input_field">
+                    <label for="Title" class="input_label">Title</label>
+                    <input id="note_title" type="text" placeholder="Enter note title">
+                </div>
+                <div class="description_field">
+                    <label for="Description" class="input_label">Description</label>
+                    <textarea name="desc" id="note_description" placeholder="Enter note description"></textarea>
+                </div>
+
+                <p><button onclick="Add_local()" class="add_btn"><i class="fa-solid fa-circle-plus"></i> Add Note</button></p>
+            </div>
+
+        </section>
+        <section class="user_display" id="user_display">
+           
+            <!-- <div class="display_box">
+                <div class="action_btn">
+                    <i class="fa-solid fa-pen-to-square" style="color: #1D4ED8;"></i>
+                    <i class="fa-solid fa-trash" style="color: red;"></i>
+                </div>
+                <p class="title">Shahmeer</p>
+                <p class="desc">my name is Shahmeer Rabbani and i am doing great some time i might be try to be fool</p>
+                <p class="timing">Created: 11/28/2024</p>
+            </div> -->
+            
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
