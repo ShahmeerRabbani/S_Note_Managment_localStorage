@@ -84,6 +84,9 @@ function Save_Note(){
     localStorage.setItem('user_notes', JSON.stringify(notes));
 }
 
+var add_btn = document.getElementById('add_btn');
+add_btn.addEventListener('click', Add_local);
+
 function Add_local(){
     var note_title = document.getElementById('note_title');
     var note_description = document.getElementById('note_description');
